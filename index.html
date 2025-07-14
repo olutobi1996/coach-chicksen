@@ -2,71 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coach Chicksen| Ages 18 Months to 8 Years</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coach Chicksen | Ages 18 Months to 8 Years</title>
     <meta name="description"
-        content="Fun, educational football classes for toddlers and kids aged 18 months to 8 years.">
-    <link rel="stylesheet" href="styles.css"> <!-- link to your stylesheet -->
+        content="Fun, educational football classes for toddlers and kids aged 18 months to 8 years." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/YOUR-KIT-HERE.js" crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
     <header class="site-header">
-        <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
-        <nav>
-            <ul>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <h1 class="brand">Coach Chicksen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#join">Join Us</a></li>
+                    <li><a href="#location">Location</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-
+    <!-- HERO SECTION -->
     <section class="hero">
-        <h1>Football Fun for Little Ones!</h1>
-        <p>Football training designed for toddlers aged 18 months to 8 years</p>
-        <a href="#programs" class="btn">Explore Classes</a>
+        <div class="hero-text">
+            <h1>Football Fun for Little Ones!</h1>
+            <p>Football training for ages 18 months to 8 years</p>
+            <a href="#programs" class="btn">Explore Classes</a>
+        </div>
     </section>
 
+
+    <!-- LEARNING THROUGH PLAY SECTION -->
+    <section class="learning-play">
+        <div class="text-side">
+            <h2>Learning Through Play</h2>
+            <p>We give your children a positive introduction to sport by teaching high quality football skills in a
+                friendly, pressure-free environment.</p>
+            <p>There are four different classes tailored specifically to children between 18 months and 8 years.</p>
+            <p>It’s the perfect way to ignite a love for sport that lasts a lifetime.</p>
+            <a href="#programs" class="btn">Find a Class</a>
+        </div>
+        <div class="image-side">
+            <img src="images/slide1.jpg" alt="Kids Playing" class="tilt" />
+        </div>
+    </section>
+
+    <!-- PROGRAMS -->
     <section id="programs" class="programs">
         <h2>Our Age Groups</h2>
         <div class="program-grid">
-            <div class="program-card">
+            <div class="program-card tilt">
                 <h3>Little Tots (18 mo – 2.5 yrs)</h3>
                 <p>Fun introduction to movement, coordination and play!</p>
             </div>
-            <div class="program-card">
+            <div class="program-card tilt">
                 <h3>Tiny Kickers (2.5 – 3.5 yrs)</h3>
                 <p>Building confidence and motor skills with football games.</p>
             </div>
-            <div class="program-card">
+            <div class="program-card tilt">
                 <h3>Junior Stars (3.5 – 5 yrs)</h3>
                 <p>Learning teamwork, structure, and basic football techniques.</p>
             </div>
-            <div class="program-card">
+            <div class="program-card tilt">
                 <h3>Super Strikers (5 – 8 yrs)</h3>
                 <p>Challenging and fun drills to develop game awareness and skills.</p>
             </div>
         </div>
     </section>
 
+    <!-- NEWS BANNER -->
+    <section class="latest-news">
+        <h2>Latest News</h2>
+        <p>This is the place to keep up-to-date with everything Coach Chicksen. From sports news, child development tips
+            to videos and social media updates.</p>
+        <div class="news-banner">
+            <img src="images/news-banner.jpg" alt="Latest News" class="tilt" />
+        </div>
+        <a href="#" class="btn">What's New</a>
+        <a href="#" class="btn">Sign Up to Newsletter</a>
+    </section>
+
+    <!-- EXTRA LINKS SECTION -->
+    <section class="extras">
+        <div class="extra-card tilt">
+            <h3>Customer Reviews</h3>
+            <p>See what parents are saying about Coach Chicksen.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="extra-card tilt">
+            <h3>Coaching Opportunities</h3>
+            <p>We're always looking for great coaches to join the team!</p>
+            <a href="#" class="btn">Join Us</a>
+        </div>
+        <div class="extra-card tilt">
+            <h3>Run a Franchise</h3>
+            <p>Interested in running your own football classes? Let’s talk.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="extra-card tilt">
+            <h3>Birthday Parties & Nurseries</h3>
+            <p>We offer fun football-themed sessions at nurseries and parties.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
     <section id="about" class="about">
         <h2>Why Choose Us?</h2>
         <p>Our sessions blend learning, movement and fun to help kids grow in confidence, social skills and physical
             ability.</p>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
         <p>Email us at: <a href="mailto:info@toddlerkicks.com">info@toddlerkicks.com</a></p>
         <a href="#book" class="btn">Book a Trial Session</a>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2025 Toddler Kicks. All rights reserved.</p>
+        <p>&copy; 2025 Coach Chicksen. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".tilt"), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2,
+        });
+    </script>
 
 </body>
 
