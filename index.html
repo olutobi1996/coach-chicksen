@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -44,7 +43,7 @@
     </header>
     <!-- Hero T -->
     <section class="hero">
-        <div class="hero-text hero-animated">
+        <div class="hero-text hero-animated tilt">
             <h1>Football Fun for Little Ones!</h1>
             <p>Football training for ages 3 to 8 years</p>
             <a href="#programs" class="btn">Explore Classes</a>
@@ -105,7 +104,7 @@
                     Championship and international appearances for Zimbabwe—Adam Chicksen brings a wealth of expertise,
                     passion, and professionalism to youth coaching.</p>
 
-                <ul style="list-style-type: disc; padding-left: 1.2rem; color: #d4af37;">
+                <ul style="list-style-type: disc; padding-left: 1.2rem; font-size: 1.15rem;">
                     <li><strong>Elite Experience:</strong> Played professionally from age 16, representing clubs like MK
                         Dons, Brighton & Hove Albion, and Notts County.</li>
                     <li><strong>International Perspective:</strong> Featured for the Zimbabwe national team, bringing
@@ -238,6 +237,16 @@
             speed: 400,
             glare: true,
             "max-glare": 0.2,
+        });
+    </script>
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,          // Animation only happens once
+            duration: 800,       // Duration in ms
+            easing: 'ease-in-out'
         });
     </script>
 
