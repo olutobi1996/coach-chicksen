@@ -41,6 +41,107 @@
 
         </div>
     </header>
+    <!-- Join us Hero -->
+    <section class="join-hero-section container tilt" data-aos="fade-up">
+        <h1 class="section-heading text-center">Ready to Join the Team?</h1>
+        <p class="lead-text text-center">Let your child discover confidence, teamwork, and a love for football — all
+            while having loads of fun!</p>
+        <div class="text-center">
+        </div>
+    </section>
+    <!-- Why Join US -->
+    <section class="benefits-section container" data-aos="fade-up">
+        <h2 class="section-heading text-center">Why Join Coach Chicksen?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-box tilt">
+                <i class="fas fa-heart icon"></i>
+                <h3>Friendly Atmosphere</h3>
+                <p>Supportive, kind coaches that build confidence and teamwork.</p>
+            </div>
+            <div class="benefit-box tilt">
+                <i class="fas fa-star icon"></i>
+                <h3>Skill Development</h3>
+                <p>From first touches to match awareness — your child grows each week.</p>
+            </div>
+            <div class="benefit-box tilt">
+                <i class="fas fa-shield-alt icon"></i>
+                <h3>Safe & Trusted</h3>
+                <p>Sessions led by FA-qualified, DBS-checked coaches.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Faqs-->
+    <section class="faq-section container" data-aos="fade-up">
+        <h2 class="section-heading text-center">FAQs</h2>
+        <div class="faq-list">
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">What should my child wear?</button>
+                <div class="accordion-content">
+                    <p>Comfy sports clothes and trainers are perfect! No football boots needed — we’ll take care of the
+                        equipment.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">Can we try before signing up?</button>
+                <div class="accordion-content">
+                    <p>Yes! Your child can attend a free taster session to see if they enjoy it before committing.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">What if my child is shy or nervous?</button>
+                <div class="accordion-content">
+                    <p>That’s totally normal — and very common! Our coaches are brilliant at helping kids settle in
+                        through playful and gentle activities.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">Where is the session held?</button>
+                <div class="accordion-content">
+                    <p>All sessions take place at <strong>Wavendon Community Centre</strong>, Walton Road, MK17 8LH —
+                        indoors in a safe, warm environment.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">Is there parking available?</button>
+                <div class="accordion-content">
+                    <p>Yes, there’s <strong>free on-site parking</strong> right outside the community centre for parents
+                        and carers.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">What time are the classes?</button>
+                <div class="accordion-content">
+                    <p><strong>Mini Movers (3–5):</strong> 9:10am – 9:55am<br><strong>Super Strikers (6–8):</strong>
+                        10:05am – 10:50am — every Saturday.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">How do I pay?</button>
+                <div class="accordion-content">
+                    <p>You can pay by term via bank transfer, or pay-as-you-go on the day — whichever suits you best.
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-toggle">Do I need to stay on-site during the session?</button>
+                <div class="accordion-content">
+                    <p>Yes — we ask that parents/guardians stay nearby. You're welcome to watch and cheer from the
+                        sidelines!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
     <!-- Footer Overall -->
     <footer class="premium-footer">
         <h2 class="footer-title">Coach Chicksen</h2>
@@ -123,6 +224,21 @@
             once: true,          // Animation only happens once
             duration: 800,       // Duration in ms
             easing: 'ease-in-out'
+        });
+    </script>
+    <script>
+        const accordions = document.querySelectorAll(".accordion-toggle");
+
+        accordions.forEach(toggle => {
+            toggle.addEventListener("click", () => {
+                const parent = toggle.parentElement;
+                parent.classList.toggle("active");
+
+                // Close others if you want only one open at a time:
+                document.querySelectorAll(".accordion-item").forEach(item => {
+                    if (item !== parent) item.classList.remove("active");
+                });
+            });
         });
     </script>
 
