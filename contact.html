@@ -17,28 +17,31 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" data-aos="fade-down">
         <div class="header-content">
-            <div class="brand-logo tilt">
+            <a href="home.html" class="brand-logo tilt">
                 <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
                 <h1 class="brand">Coach Chicksen</h1>
-            </div>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#programs" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
-                    <li><a href="#about" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
-                    <li><a href="#contact" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="#classes" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
-                    <li><a href="#news" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
-                    <li><a href="#join" class="glow-link"><i class="fas fa-user-plus"></i> Join Us</a></li>
-                    <li><a href="#location" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                    <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
+                    <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
+                    <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
@@ -46,39 +49,39 @@
     <section class="testimonials-section container" data-aos="fade-up">
         <h2 class="section-heading text-center">What Parents Say</h2>
         <div class="testimonials-grid">
-            <div class="testimonial-box tilt glow">
+            <div class="testimonial-box tilt glow" data-aos="zoom-in">
                 <p>"Coach Chicksen has transformed my son's confidence. He can’t wait for Saturdays now!"</p>
                 <strong>— Sarah L.</strong>
             </div>
-            <div class="testimonial-box tilt glow">
+            <div class="testimonial-box tilt glow" data-aos="zoom-in" data-aos-delay="100">
                 <p>"Brilliant mix of fun and football. The coaches genuinely care about each child’s growth."</p>
                 <strong>— James P.</strong>
             </div>
-            <div class="testimonial-box tilt glow">
+            <div class="testimonial-box tilt glow" data-aos="zoom-in" data-aos-delay="200">
                 <p>"Professional, friendly, and so engaging. Highly recommend to all parents!"</p>
                 <strong>— Aisha M.</strong>
             </div>
         </div>
     </section>
 
-    <!-- Gallery  -->
+    <!-- Gallery -->
     <section class="gallery-section container" data-aos="fade-up">
         <h2 class="section-heading text-center">Gallery</h2>
         <div class="image-grid">
-            <img src="images/coachchicksenline.jpg" class="tilt" alt="Kids playing football">
-            <img src="images/coachchicksenwarmup.jpg" class="tilt" alt="Football coaching drill">
-            <img src="images/coachchicksenladder.jpg" class="tilt" alt="Happy kids after session">
+            <img src="images/coachchicksenline.jpg" class="tilt" alt="Kids playing football" data-aos="zoom-in">
+            <img src="images/coachchicksenwarmup.jpg" class="tilt" alt="Football coaching drill" data-aos="zoom-in"
+                data-aos-delay="100">
+            <img src="images/coachchicksenladder.jpg" class="tilt" alt="Happy kids after session" data-aos="zoom-in"
+                data-aos-delay="200">
         </div>
     </section>
 
-
-    <!-- Footer Overall -->
-    <footer class="premium-footer">
+    <!-- Footer -->
+    <footer class="premium-footer" data-aos="fade-up" data-aos-delay="200">
         <h2 class="footer-title">Coach Chicksen</h2>
         <div class="footer-container">
-
             <!-- Contact Form -->
-            <div class="footer-form scroll-fade">
+            <div class="footer-form scroll-fade" data-aos="fade-right">
                 <h4><i class="fas fa-calendar-check icon"></i> Book a Session</h4>
                 <div class="form-card">
                     <form action="#" method="POST" enctype="multipart/form-data" class="contact-form">
@@ -93,7 +96,7 @@
             </div>
 
             <!-- Session Info -->
-            <div class="footer-info scroll-fade">
+            <div class="footer-info scroll-fade" data-aos="fade-up">
                 <h4><i class="fas fa-futbol icon"></i> Session Details</h4>
                 <p><strong><i class="fas fa-child icon"></i> Mini Movers (3–5 years)</strong><br>
                     Saturdays · 9:10am – 9:55am</p>
@@ -107,7 +110,7 @@
             </div>
 
             <!-- Newsletter Subscribe -->
-            <div class="footer-subscribe scroll-fade">
+            <div class="footer-subscribe scroll-fade" data-aos="fade-left">
                 <h4><i class="fas fa-paper-plane icon"></i> Stay in the Loop</h4>
                 <p>Sign up to get updates, news, and offers from Coach Chicksen Football.</p>
                 <form action="#" method="POST" class="subscribe-form">
@@ -117,7 +120,6 @@
                     </div>
                 </form>
             </div>
-
         </div>
 
         <!-- Footer Bottom -->
@@ -130,13 +132,12 @@
                     <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
                                 class="fab fa-instagram"></i></a></li>
                 </ul>
-                <p id="footer-info">
-                    &copy; 2025 <a href="#">Coach Chicksen</a>. All rights reserved.
-                </p>
+                <p id="footer-info">&copy; 2025 <a href="#">Coach Chicksen</a>. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -144,28 +145,18 @@
             speed: 400,
             glare: true,
             "max-glare": 0.2,
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".tilt"), {
-            max: 15,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.2,
-        });
-    </script>
-    <!-- AOS Animation Library -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            once: true,          // Animation only happens once
-            duration: 800,       // Duration in ms
-            easing: 'ease-in-out'
         });
     </script>
 
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+    </script>
 </body>
 
 </html>

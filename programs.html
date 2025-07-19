@@ -21,39 +21,41 @@
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" data-aos="fade-down">
         <div class="header-content">
-            <div class="brand-logo tilt">
+            <a href="home.html" class="brand-logo tilt">
                 <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
                 <h1 class="brand">Coach Chicksen</h1>
-            </div>
+            </a>
             <nav>
                 <ul>
-                    <li><a href="#programs" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
-                    <li><a href="#about" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
-                    <li><a href="#contact" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="#classes" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
-                    <li><a href="#news" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
-                    <li><a href="#join" class="glow-link"><i class="fas fa-user-plus"></i> Join Us</a></li>
-                    <li><a href="#location" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                    <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
+                    <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
+                    <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </li>
                 </ul>
             </nav>
-
         </div>
     </header>
 
+    <!-- Hero -->
     <section class="programs-hero-section container tilt" data-aos="fade-up">
-        <h1 class="section-heading text-center">Our Football Programs</h1>
+        <h1 class="section-heading text-center"><i class="fas fa-futbol gold-icon"></i> Our Football Programs</h1>
         <p class="lead-text text-center">Tailored sessions designed to support your child’s football journey — from
             first kicks to confident play.</p>
     </section>
 
+    <!-- Program Grid -->
     <section class="program-grid container" data-aos="fade-up">
         <!-- Mini Movers -->
         <div class="program-image-wrapper tilt">
             <img src="images/coachchicksenboy.jpg" alt="Mini Movers" class="program-image" />
             <div class="program-card tilt glow">
-                <h3>Mini Movers (3 – 5 yrs)</h3>
+                <h3><i class="fas fa-child gold-icon"></i> Mini Movers (3 – 5 yrs)</h3>
                 <p>Fun, imaginative football play that builds coordination and confidence for young starters.</p>
             </div>
         </div>
@@ -62,15 +64,16 @@
         <div class="program-image-wrapper tilt">
             <img src="images/coachchicksenschool.jpg" alt="Super Strikers" class="program-image" />
             <div class="program-card tilt glow">
-                <h3>Super Strikers (6 – 8 yrs)</h3>
+                <h3><i class="fas fa-bolt gold-icon"></i> Super Strikers (6 – 8 yrs)</h3>
                 <p>Dynamic training sessions to enhance dribbling, awareness, and teamwork — great for budding players.
                 </p>
             </div>
         </div>
     </section>
 
+    <!-- Program Benefits -->
     <section class="program-benefits container" data-aos="fade-up">
-        <h2 class="section-heading text-center">Program Benefits</h2>
+        <h2 class="section-heading text-center"><i class="fas fa-star gold-icon"></i> Program Benefits</h2>
         <div class="benefits-grid">
             <div class="benefit-box tilt">
                 <i class="fas fa-smile-beam icon"></i>
@@ -90,16 +93,15 @@
         </div>
     </section>
 
-    <!-- Footer Overall -->
+    <!-- Footer -->
     <footer class="premium-footer">
         <h2 class="footer-title">Coach Chicksen</h2>
         <div class="footer-container">
-
             <!-- Contact Form -->
             <div class="footer-form scroll-fade">
                 <h4><i class="fas fa-calendar-check icon"></i> Book a Session</h4>
                 <div class="form-card">
-                    <form action="#" method="POST" enctype="multipart/form-data" class="contact-form">
+                    <form action="#" method="POST" class="contact-form">
                         <input type="text" name="name" placeholder="Parent/Guardian Name" required>
                         <input type="tel" name="phone" placeholder="Phone Number">
                         <input type="email" name="email" placeholder="Email Address" required>
@@ -124,7 +126,7 @@
                 </p>
             </div>
 
-            <!-- Newsletter Subscribe -->
+            <!-- Newsletter -->
             <div class="footer-subscribe scroll-fade">
                 <h4><i class="fas fa-paper-plane icon"></i> Stay in the Loop</h4>
                 <p>Sign up to get updates, news, and offers from Coach Chicksen Football.</p>
@@ -135,7 +137,6 @@
                     </div>
                 </form>
             </div>
-
         </div>
 
         <!-- Footer Bottom -->
@@ -155,6 +156,7 @@
         </div>
     </footer>
 
+    <!-- JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".tilt"), {
@@ -164,17 +166,17 @@
             "max-glare": 0.2,
         });
     </script>
-    <!-- AOS Animation Library -->
+
+    <!-- AOS Animation -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: true,          // Animation only happens once
-            duration: 800,       // Duration in ms
+            once: false,
+            duration: 800,
             easing: 'ease-in-out'
         });
     </script>
-
 </body>
 
 </html>

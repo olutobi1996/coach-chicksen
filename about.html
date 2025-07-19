@@ -17,59 +17,52 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="site-header">
+    <header class="site-header" data-aos="fade-down">
         <div class="header-content">
-            <div class="brand-logo tilt">
+            <a href="home.html" class="brand-logo tilt">
                 <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
                 <h1 class="brand">Coach Chicksen</h1>
-            </div>
-            <nav>
+            </a>
+            <nav data-aos="fade-down" data-aos-delay="100">
                 <ul>
-                    <li><a href="#programs" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
-                    <li><a href="#about" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
-                    <li><a href="#contact" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="#classes" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
-                    <li><a href="#news" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
-                    <li><a href="#join" class="glow-link"><i class="fas fa-user-plus"></i> Join Us</a></li>
-                    <li><a href="#location" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+                    <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
+                    <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
+                    <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </li>
                 </ul>
             </nav>
-
         </div>
     </header>
-    <!-- About Coach Chicksen -->
-    <section id="about-profile" class="about-profile">
-        <div class="profile-wrapper tilt">
-            <div class="profile-image">
+
+    <section id="about-profile" class="about-profile tilt" data-aos="fade-up">
+        <div class="profile-wrapper">
+            <div class="profile-image" data-aos="zoom-in">
                 <img src="images/coachchicksen.jpg" alt="Coach Adam Chicksen Portrait" />
             </div>
-            <div class="profile-content">
+            <div class="profile-content" data-aos="fade-left">
                 <h2><i class="fas fa-user-shield"></i> Meet Coach Adam Chicksen</h2>
                 <p>From professional pitches to playful first kicks, Adam Chicksen brings unmatched experience and heart
-                    to grassroots coaching. With over 15 years at the top levels of football, Adam has played for clubs
-                    including MK Dons, Brighton & Hove Albion, and Notts County — and has proudly represented Zimbabwe
-                    on the international stage.</p>
-
-                <p>Now, he's channeling his passion into nurturing the next generation. Coach Chicksen understands that
-                    the early years are vital — not just for skill-building, but for growing confidence, teamwork, and
-                    joy through movement. His coaching sessions are active, inclusive, and designed to make every child
-                    feel like a champion.</p>
-
-                <p>As a parent, you can trust you're leaving your child in safe, experienced hands. Adam is more than a
-                    coach — he’s a role model, a motivator, and someone who knows how to make football fun while
-                    teaching important life skills.</p>
-
-                <a href="#programs" class="btn">View Sessions</a>
+                    to grassroots coaching...</p>
+                <p>Now, he's channeling his passion into nurturing the next generation...</p>
+                <p>As a parent, you can trust you're leaving your child in safe, experienced hands...</p>
+                <a href="programs.html" class="btn">View Sessions</a>
             </div>
         </div>
     </section>
 
     <!-- Footer Overall -->
-    <footer class="premium-footer">
+    <footer class="premium-footer" data-aos="fade-up" data-aos-delay="200">
         <h2 class="footer-title">Coach Chicksen</h2>
         <div class="footer-container">
 
@@ -157,7 +150,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init({
-            once: true,          // Animation only happens once
+            once: false,          
             duration: 800,       // Duration in ms
             easing: 'ease-in-out'
         });
