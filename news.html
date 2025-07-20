@@ -25,35 +25,36 @@
 <body>
 
     <header class="site-header" data-aos="fade-down">
-  <div class="header-content">
+        <div class="header-content">
 
-    <!-- New wrapper to align logo & burger in one line -->
-    <div class="nav-top-row">
-      <a href="home.html" class="brand-logo tilt">
-        <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
-        <h1 class="brand">Coach Chicksen</h1>
-      </a>
+            <!-- New wrapper to align logo & burger in one line -->
+            <div class="nav-top-row">
+                <a href="home.html" class="brand-logo tilt">
+                    <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
+                    <h1 class="brand">Coach Chicksen</h1>
+                </a>
 
-      <div class="burger" id="burger">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
+                <div class="burger" id="burger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
 
-    <!-- Navigation Menu -->
-    <nav id="nav-menu">
-      <ul>
-        <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
-        <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
-        <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
-        <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
-        <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
-        <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a></li>
-      </ul>
-    </nav>
+            <!-- Navigation Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
+                    <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
+                    <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
+                    <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
+                    <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+                    </li>
+                </ul>
+            </nav>
 
-  </div>
-</header>
+        </div>
+    </header>
 
 
     <!-- ✅ News Section -->
@@ -104,29 +105,22 @@
         </div>
     </section>
 
-    <!-- ✅ Footer -->
-    <footer class="premium-footer">
-        <h2 class="footer-title">Coach Chicksen</h2>
-        <div class="footer-container">
+    <!-- Footer Overall -->
+    <footer class="premium-footer" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="footer-title" data-aos="fade-up" data-aos-delay="150">Coach Chicksen</h2>
+
+        <div class="footer-container" data-aos="fade-up" data-aos-delay="200">
 
             <!-- Contact Form -->
-            <div class="footer-form scroll-fade" data-aos="fade-up">
+            <div class="footer-form scroll-fade" data-aos="fade-up" data-aos-delay="250">
                 <h4><i class="fas fa-calendar-check icon"></i> Book a Session</h4>
                 <div class="form-card">
                     <form action="https://formsubmit.co/adam@coachchicksen.com" method="POST" class="contact-form">
-                        <!-- Disable CAPTCHA -->
                         <input type="hidden" name="_captcha" value="false">
-
-                        <!-- Redirect after submission -->
                         <input type="hidden" name="_next" value="https://coachchicksen.com/thank-you.html">
-
-                        <!-- Optional: Custom subject line -->
                         <input type="hidden" name="_subject" value="New Message from Coach Chicksen Website">
-
-                        <!-- Optional: Disable autoresponse email to sender -->
                         <input type="hidden" name="_autoresponse" value="">
 
-                        <!-- User Inputs -->
                         <input type="text" name="name" placeholder="Parent/Guardian Name" required>
                         <input type="tel" name="phone" placeholder="Phone Number">
                         <input type="email" name="email" placeholder="Your Email Address" required>
@@ -136,12 +130,11 @@
 
                         <button type="submit" class="cta-button">Send Message</button>
                     </form>
-
                 </div>
             </div>
 
             <!-- Session Info -->
-            <div class="footer-info scroll-fade" data-aos="fade-up">
+            <div class="footer-info scroll-fade" data-aos="fade-up" data-aos-delay="300">
                 <h4><i class="fas fa-futbol icon"></i> Session Details</h4>
                 <p><strong><i class="fas fa-child icon"></i> Mini Movers (3–5 years)</strong><br>
                     Saturdays · 9:10am – 9:55am</p>
@@ -155,7 +148,7 @@
             </div>
 
             <!-- Newsletter -->
-            <div class="footer-subscribe scroll-fade">
+            <div class="footer-subscribe scroll-fade" data-aos="fade-up" data-aos-delay="350">
                 <h4><i class="fas fa-paper-plane icon"></i> Stay in the Loop</h4>
                 <p>Sign up to get updates, news, and offers from Coach Chicksen Football.</p>
 
@@ -171,11 +164,10 @@
                 </form>
             </div>
 
-
         </div>
 
         <!-- Footer Bottom -->
-        <div id="footer-bottom">
+        <div id="footer-bottom" data-aos="fade-up" data-aos-delay="400">
             <div class="container footer-bottom-content">
                 <ul class="social-icons">
                     <li><a href="https://www.facebook.com/adam.chicksen.9/" target="_blank" aria-label="Facebook"><i
@@ -191,6 +183,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Vanilla Tilt -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
