@@ -22,25 +22,36 @@
 <body>
 
     <header class="site-header" data-aos="fade-down">
-        <div class="header-content">
-            <a href="home.html" class="brand-logo tilt">
-                <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
-                <h1 class="brand">Coach Chicksen</h1>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
-                    <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
-                    <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
-                    <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
-                    <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <div class="header-content">
+
+    <!-- New wrapper to align logo & burger in one line -->
+    <div class="nav-top-row">
+      <a href="home.html" class="brand-logo tilt">
+        <img src="images/coachlogo.jpg" alt="Coach Chicksen Logo" class="logo" />
+        <h1 class="brand">Coach Chicksen</h1>
+      </a>
+
+      <div class="burger" id="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="home.html" class="glow-link"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="programs.html" class="glow-link"><i class="fas fa-futbol"></i> Programs</a></li>
+        <li><a href="about.html" class="glow-link"><i class="fas fa-question-circle"></i> About</a></li>
+        <li><a href="contact.html" class="glow-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="classes.html" class="glow-link"><i class="fas fa-child"></i> Classes</a></li>
+        <li><a href="news.html" class="glow-link"><i class="fas fa-newspaper"></i> News</a></li>
+        <li><a href="location.html" class="glow-link"><i class="fas fa-map-marker-alt"></i> Location</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
 
     <!-- Hero -->
     <section class="programs-hero-section container tilt" data-aos="fade-up">
@@ -101,14 +112,30 @@
             <div class="footer-form scroll-fade">
                 <h4><i class="fas fa-calendar-check icon"></i> Book a Session</h4>
                 <div class="form-card">
-                    <form action="#" method="POST" class="contact-form">
+                    <form action="https://formsubmit.co/adam@coachchicksen.com" method="POST" class="contact-form">
+                        <!-- Disable CAPTCHA -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <!-- Redirect after submission -->
+                        <input type="hidden" name="_next" value="https://coachchicksen.com/thank-you.html">
+
+                        <!-- Optional: Custom subject line -->
+                        <input type="hidden" name="_subject" value="New Message from Coach Chicksen Website">
+
+                        <!-- Optional: Disable autoresponse email to sender -->
+                        <input type="hidden" name="_autoresponse" value="">
+
+                        <!-- User Inputs -->
                         <input type="text" name="name" placeholder="Parent/Guardian Name" required>
                         <input type="tel" name="phone" placeholder="Phone Number">
-                        <input type="email" name="email" placeholder="Email Address" required>
-                        <input type="text" name="child_age" placeholder="Child's Age Group (3–5 or 6–8)" required>
-                        <textarea name="message" placeholder="Any additional notes or questions?" rows="3"></textarea>
-                        <button type="submit" class="cta-button">Submit Request</button>
+                        <input type="email" name="email" placeholder="Your Email Address" required>
+                        <input type="text" name="child_age" placeholder="Child's Age Group (e.g. 3–5 or 6–8)" required>
+                        <textarea name="message" placeholder="Any additional notes or questions?" rows="4"
+                            required></textarea>
+
+                        <button type="submit" class="cta-button">Send Message</button>
                     </form>
+
                 </div>
             </div>
 
@@ -130,24 +157,31 @@
             <div class="footer-subscribe scroll-fade">
                 <h4><i class="fas fa-paper-plane icon"></i> Stay in the Loop</h4>
                 <p>Sign up to get updates, news, and offers from Coach Chicksen Football.</p>
-                <form action="#" method="POST" class="subscribe-form">
+
+                <form action="https://formsubmit.co/adam@coachchicksen.com" method="POST" class="subscribe-form">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://coachchicksen.com/thank-you.html">
+                    <input type="hidden" name="_subject" value="New Newsletter Signup from Website">
+
                     <div class="subscribe-box">
                         <input type="email" name="email" placeholder="Enter your email" required>
                         <button type="submit" class="cta-button">Subscribe</button>
                     </div>
                 </form>
             </div>
+
         </div>
 
         <!-- Footer Bottom -->
         <div id="footer-bottom">
             <div class="container footer-bottom-content">
                 <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/share/19eVURJwJv/?mibextid=wwXIfr" target="_blank"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i
-                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/adam.chicksen.9/" target="_blank" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/AdamChicksen23" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/adamchicksen/?hl=en" target="_blank"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
                 </ul>
                 <p id="footer-info">
                     &copy; 2025 <a href="#">Coach Chicksen</a>. All rights reserved.
@@ -177,6 +211,15 @@
             easing: 'ease-in-out'
         });
     </script>
+    <script>
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('nav-menu').querySelector('ul');
+
+        burger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
 </body>
 
 </html>
